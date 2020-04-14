@@ -237,7 +237,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#manages">
-        <rdfs:comment>Relation between a Bulding and the  devices it manages</rdfs:comment>
+        <rdfs:comment>Relation between a Virutal Node and the  devices it manages</rdfs:comment>
         <rdfs:label>manages</rdfs:label>
     </owl:ObjectProperty>
     
@@ -266,7 +266,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
-        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:isDefinedBy>A spatial representation for a given feature.</rdfs:isDefinedBy>
         <rdfs:label>hasGeometry</rdfs:label>
@@ -648,23 +647,6 @@
     
 
 
-    <!-- http://purl.org/recognition/Cim#Sector -->
-
-
-    <owl:Class rdf:about="http://purl.org/recognition/Cim#Sector">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#sectorName"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A section or zone</rdfs:comment>
-        <rdfs:label>Sector</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/recognition/Cim#SoC -->
 
 
@@ -755,25 +737,14 @@
     
 
 
-    <!-- http://www.opengis.net/ont/geosparql#Feature -->
-
-
-    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
-        <rdfs:comment>This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types.</rdfs:comment>
-        <rdfs:isDefinedBy>SAREF extension for building devices</rdfs:isDefinedBy>
-        <rdfs:isDefinedBy>https://mariapoveda.github.io/saref-ext/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml</rdfs:isDefinedBy>
-        <rdfs:label>Feature</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
 
 
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:comment>SAREF extension for building devices
+SAREF4BLDG ontology, an extension of the SAREF ontology that was created based on the Industry Foundation Classes (IFC) standard for building information. It should be noted that not the whole standard has been transformed since it exceeds the scope of this extension, which is limited to devices and appliances within the building domain.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://mariapoveda.github.io/saref-ext/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml"/>
-        <rdfs:isDefinedBy>SAREF extension for building devices
-SAREF4BLDG ontology, an extension of the SAREF ontology that was created based on the Industry Foundation Classes (IFC) standard for building information. It should be noted that not the whole standard has been transformed since it exceeds the scope of this extension, which is limited to devices and appliances within the building domain.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://w3id.org/def/saref4bldg#PhysicalObject</rdfs:isDefinedBy>
     </owl:Class>
     
 

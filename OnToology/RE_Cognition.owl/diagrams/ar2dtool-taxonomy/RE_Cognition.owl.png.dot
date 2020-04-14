@@ -1,12 +1,11 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "Cim:Frequency" "http://www.opengis.net/ont/geosparql#Feature" "Cim:Return_Of_Investment" "saref:Property" "http://www.co-ode.org/ontologies/ont.owl#Building_Manager" "Cim:Asset" "saref:Power" "saref:Device" "Cim:Fluid_Level" "saref:Energy" "Cim:SoC" "saref:FeatureOfInterest" "Cim:Voltage" "time:TemporalEntity" "Cim:Measurement" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "Cim:Soc_Unit" "saref:Price" "saref:Profile" "Cim:Asset_Configuration" "Cim:Sector" "saref:UnitOfMeasure" "saref:Measurement" "http://www.co-ode.org/ontologies/ont.owl#Building_Operator_" "Cim:Incentives" "time:Instant" "Cim:Installation_Cost" "Cim:Profile" ; /*classes style*/
+node [shape = rectangle, color="black"]; "Cim:Frequency" "Cim:Return_Of_Investment" "saref:Property" "http://www.co-ode.org/ontologies/ont.owl#Building_Manager" "Cim:Asset" "saref:Power" "saref:Device" "Cim:Fluid_Level" "saref:Energy" "Cim:SoC" "saref:FeatureOfInterest" "Cim:Voltage" "time:TemporalEntity" "Cim:Measurement" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "Cim:Soc_Unit" "saref:Price" "saref:Profile" "Cim:Asset_Configuration" "saref:UnitOfMeasure" "saref:Measurement" "http://www.co-ode.org/ontologies/ont.owl#Building_Operator_" "Cim:Incentives" "time:Instant" "Cim:Installation_Cost" "Cim:Profile" ; /*classes style*/
 	"Cim:Voltage" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"saref:Price" -> "saref:Property" [ label = "rdfs:subClassOf" ];
-	"Cim:Asset" -> "saref:Device" [ label = "rdfs:subClassOf" ];
 	"Cim:Fluid_Level" -> "saref:Property" [ label = "rdfs:subClassOf" ];
-	"Cim:Sector" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"Cim:Asset" -> "saref:Device" [ label = "rdfs:subClassOf" ];
 	"Cim:Return_Of_Investment" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"Cim:Asset_Configuration" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"Cim:SoC" -> "saref:Property" [ label = "rdfs:subClassOf" ];
