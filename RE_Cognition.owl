@@ -1,0 +1,1001 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/recognition/Cim"
+     xml:base="http://purl.org/recognition/Cim"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:Cim="http://purl.org/recognition/Cim#"
+     xmlns:dc3="http://purl.org/dc/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:saref="https://w3id.org/saref#"
+     xmlns:terms="http://purl.org/dc/terms"
+     xmlns:terms1="http://purl.org/dc/terms/"
+     xmlns:saref4bldg="https://w3id.org/def/saref4bldg#">
+    <owl:Ontology rdf:about="http://purl.org/recognition/Cim#">
+        <owl:imports rdf:resource="https://w3id.org/saref"/>
+        <owl:imports rdf:resource="https://w3id.org/def/v1/saref4bldg"/>
+        <dc:title>Re-cognition ontology</dc:title>
+        <terms1:creator rdf:resource="https://www.iti.gr/iti/index.html"/>
+        <terms1:creator>George Sidiras</terms1:creator>
+        <terms1:creator>ITI</terms1:creator>
+        <terms1:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <rdfs:comment>RE-COGNITION system is that it will be applicable to different building types and locations with various characteristics, preserving its interoperability, though. This is realized through the development of a common vocabulary between the different system components  and it will reuse standard ontologies whenever possible</rdfs:comment>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/termscreator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/termscreator"/>
+    
+
+
+    <!-- http://purl.org/dc/termslicense -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/termslicense"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/recognition/Cim#preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/recognition/Cim#consumes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#consumes">
+        <rdfs:label>consumes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasComfortSetting -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasComfortSetting">
+        <rdfs:label>has comfort settings</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasCurrency -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasCurrency">
+        <rdfs:comment>Link between a price and its currency</rdfs:comment>
+        <rdfs:label>has currency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasDuration">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Duration of an event</rdfs:comment>
+        <rdfs:label>has duration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasIncentive -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasIncentive">
+        <rdfs:comment>A relation between a property and its incentives associated</rdfs:comment>
+        <rdfs:label>has incentive</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasPayment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasPayment">
+        <rdfs:label>has payment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasPhase -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasPhase">
+        <rdfs:label>has phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasProfile -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasProfile">
+        <rdfs:comment>Link between an entity and its profile</rdfs:comment>
+        <rdfs:label>has profile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasSystemConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasSystemConstraint">
+        <rdfs:label>has system constraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasTransaction -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasTransaction">
+        <rdfs:label>has transaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#isLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#isLocatedAt">
+        <rdfs:comment>Relation between an object and the geographical feature in which it is located at</rdfs:comment>
+        <rdfs:label>is located at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#isOwnedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/recognition/Cim#owns"/>
+        <rdfs:comment>Link between a device and its customer</rdfs:comment>
+        <rdfs:label>is owned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#isRelatedToProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#isRelatedToProperty">
+        <rdfs:label>is related to property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#isValidDuringPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#isValidDuringPeriod">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Period where an entity, such a contract, is valid</rdfs:comment>
+        <rdfs:label>is valid during period</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#manages -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#manages">
+        <rdfs:comment>Relation between a Virutal Node and the  devices it manages</rdfs:comment>
+        <rdfs:label>manages</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#owns -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#owns">
+        <rdfs:comment>Link between the customers and the devices</rdfs:comment>
+        <rdfs:label>owns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#quantifiesKPI -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#quantifiesKPI">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
+        <rdfs:isDefinedBy>A spatial representation for a given feature.</rdfs:isDefinedBy>
+        <rdfs:label>hasGeometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/openadr#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/openadr#hasDuration"/>
+    
+
+
+    <!-- https://w3id.org/def/openadr#sendsEvent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/openadr#sendsEvent"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#isDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4city#isDerivedFrom">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city"/>
+        <rdfs:label>is derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#consistsOf">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref"/>
+        <rdfs:label>consists of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#hasFeatureOfInterest">
+        <rdfs:isDefinedBy>https://w3id.org/saref#</rdfs:isDefinedBy>
+        <rdfs:label>has feature of interest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#isAbout -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#isAbout">
+        <rdfs:comment>A relationship identifying what an entity, such as a Profile, is about</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/saref#</rdfs:isDefinedBy>
+        <rdfs:label>isAbout</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#isMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#isMeasuredIn">
+        <rdfs:isDefinedBy>https://w3id.org/def/saref</rdfs:isDefinedBy>
+        <rdfs:label>is measured in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#isRelatedToMeasurement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#isRelatedToMeasurement">
+        <rdfs:isDefinedBy>https://w3id.org/def/saref</rdfs:isDefinedBy>
+        <rdfs:label>is related to measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#makesMeasurement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#makesMeasurement">
+        <rdfs:isDefinedBy>https://w3id.org/def/saref</rdfs:isDefinedBy>
+        <rdfs:label>makes measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#measuresProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#measuresProperty">
+        <rdfs:isDefinedBy>https://w3id.org/def/saref</rdfs:isDefinedBy>
+        <rdfs:label>measures property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/recognition/Cim#clusterDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#clusterDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>Description of a cluster</rdfs:comment>
+        <rdfs:label>cluster description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#clusterName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#clusterName">
+        <rdfs:comment>Name of a cluster</rdfs:comment>
+        <rdfs:label>cluster name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#granularity -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#granularity">
+        <rdfs:comment>granularity of the profile (e.g., weekly, daily)</rdfs:comment>
+        <rdfs:label>granularity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#hasDescription">
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#href -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#href">
+        <rdfs:comment>URI of the endpoint</rdfs:comment>
+        <rdfs:label>href</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#name">
+        <rdfs:isDefinedBy>name</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#sectorName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#sectorName">
+        <rdfs:label>sector name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#status -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#status">
+        <rdfs:comment>The final status as if the DVN fullfiled the request or it failed</rdfs:comment>
+        <rdfs:label>status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#type -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/recognition/Cim#type">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/saref#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saref#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:isDefinedBy>https://w3id.org/def/saref</rdfs:isDefinedBy>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/saref#timeStamp -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/saref#timeStamp">
+        <rdfs:isDefinedBy>https://w3id.org/def/saref</rdfs:isDefinedBy>
+        <rdfs:label>timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Asset -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Asset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+        <rdfs:label>Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Asset_Configuration -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Asset_Configuration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Asset_Control -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Asset_Control">
+        <owl:equivalentClass rdf:resource="https://w3id.org/saref#Command"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#ComfortSetting -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#ComfortSetting">
+        <rdfs:label>Comfort setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Energy_Market_Price -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Energy_Market_Price"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Fluid_Level -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Fluid_Level">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Frequency -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Frequency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+        <rdfs:comment>Frequency constraint related to the grid</rdfs:comment>
+        <rdfs:label>Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Incentives -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Incentives">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Installation_Cost -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Installation_Cost">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Measurement -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Measurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Measurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#hasPhase"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/recognition/Cim#Phase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Operator -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Operator"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Phase -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Phase">
+        <rdfs:label>Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Profile -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Profile">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Profile"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/openadr#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#granularity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A specification associated to a Building Profiles  or a device to collect information about profiles</rdfs:comment>
+        <rdfs:label>Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Return_Of_Investment -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Return_Of_Investment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#SoC -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#SoC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+        <terms1:description>State of charge (SoC) is the level of charge of an electric battery relative to its capacity.</terms1:description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Soc_Unit -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Soc_Unit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#SystemConstraint -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#SystemConstraint">
+        <rdfs:label>System constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Voltage -->
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Voltage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+        <rdfs:comment>Voltage constraint related to the grid</rdfs:comment>
+        <rdfs:label>Voltage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Building_Manager -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Building_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Building_Operator_"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Building_Operator_ -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Building_Operator_">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#consumes"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/recognition/Cim#Operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#hasProfile"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/recognition/Cim#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Legal entities that aggregate the load or generation of various demand and/or generation/production units and aim at optimizing energy supply and consumption.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GroupAsset -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GroupAsset">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#clusterDescription"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#clusterName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Group Asset such as FEIDs or Cluserr Devices </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:comment>SAREF extension for building devices
+SAREF4BLDG ontology, an extension of the SAREF ontology that was created based on the Industry Foundation Classes (IFC) standard for building information. It should be noted that not the whole standard has been transformed since it exceeds the scope of this extension, which is limited to devices and appliances within the building domain.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://mariapoveda.github.io/saref-ext/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml"/>
+        <rdfs:isDefinedBy>https://w3id.org/def/saref4bldg#PhysicalObject</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>A temporal entity with zero extent or duration</rdfs:comment>
+        <rdfs:isDefinedBy>Instant</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>http://www.w3.org/2006/time#</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:comment>A temporal entity with an extent or duration</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.w3.org/2006/time#</rdfs:isDefinedBy>
+        <rdfs:label>Time interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:comment>A temporal interval or instant.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.w3.org/2006/time#</rdfs:isDefinedBy>
+        <rdfs:label>Temporal entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#KeyPerfomanceIndicatorAssessement -->
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#KeyPerfomanceIndicatorAssessement">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city"/>
+        <rdfs:label>Key performance indicator assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#KeyPerformanceIndicator -->
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#KeyPerformanceIndicator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#quantifiesKPI"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/saref4city#KeyPerformanceIndicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4city#isDerivedFrom"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city"/>
+        <rdfs:label>Key Performance Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Command -->
+
+    <rdf:Description rdf:about="https://w3id.org/saref#Command"/>
+    
+
+
+    <!-- https://w3id.org/saref#Device -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Device">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#measuresProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Property"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment>A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device&apos;s user vs. the point of view of the device&apos;s manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/def/saref#</rdfs:isDefinedBy>
+        <rdfs:label>Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Energy -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Energy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+        <rdfs:comment>A property related to measurements that are characterized  by a value measured in energy units</rdfs:comment>
+        <rdfs:label>Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#FeatureOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#FeatureOfInterest">
+        <rdfs:isDefinedBy>https://w3id.org/def/saref#</rdfs:isDefinedBy>
+        <rdfs:label>Feature Of Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Measurement -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasFeatureOfInterest"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#isMeasuredIn"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#timeStamp"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://w3id.org/def/saref#</rdfs:isDefinedBy>
+        <rdfs:label>Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Power -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Power">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+        <rdfs:comment>A property related to measurements that are characterized  by a value measured in power units</rdfs:comment>
+        <rdfs:label>Power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Price -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Price">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Profile -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Profile">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#isAbout"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A specification associated to a device to collect information about a certain Property (e.g., Energy) or Commodity (e.g.Water) for optimizing its usage in the home, office or building in which the device is located. This specification is about a certain Property or Commodity (saref:isAbout), can be calculated over a time span (saref:hasTime ) and can be associated to some costs (saref:hasPrice). An example is the Power Profile defined in the SAREF4ENER extension that can be associated to a device for optimizing the Energy efficiency in the home, office or building in which the device is located.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/saref#</rdfs:isDefinedBy>
+        <rdfs:label>Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Property -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#isRelatedToMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://w3id.org/def/saref#</rdfs:isDefinedBy>
+        <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/saref#UnitOfMeasure">
+        <rdfs:isDefinedBy>https://w3id.org/saref</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/recognition/Cim#DownFlexibility -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#DownFlexibility">
+        <rdfs:label>Down flexibility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#EnergyConsumption -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#EnergyConsumption">
+        <rdf:type rdf:resource="https://w3id.org/saref#Energy"/>
+        <rdfs:label>Energy consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#EnergyGeneration -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#EnergyGeneration">
+        <rdf:type rdf:resource="https://w3id.org/saref#Energy"/>
+        <rdfs:label>Energy generation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#EnergyGenerationForecast -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#EnergyGenerationForecast">
+        <rdf:type rdf:resource="https://w3id.org/saref#Energy"/>
+        <rdfs:label>Energy generation forecast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#EnergyLoadForecast -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#EnergyLoadForecast">
+        <rdf:type rdf:resource="https://w3id.org/saref#Energy"/>
+        <rdfs:label>Energy load forecast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PowerConsumption -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PowerConsumption">
+        <rdf:type rdf:resource="https://w3id.org/saref#Power"/>
+        <rdfs:label>Power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PowerGeneration -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PowerGeneration">
+        <rdf:type rdf:resource="https://w3id.org/saref#Power"/>
+        <rdfs:label>Power generation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PowerGenerationForecast -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PowerGenerationForecast">
+        <rdf:type rdf:resource="https://w3id.org/saref#Power"/>
+        <rdfs:label>Power generation forecast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PowerLoadForecast -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PowerLoadForecast">
+        <rdf:type rdf:resource="https://w3id.org/saref#Power"/>
+        <rdfs:label>Power load forecast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PriceAS -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PriceAS"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PriceDayAhead -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PriceDayAhead"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#PriceIntraDay -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#PriceIntraDay"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#UpFlexibility -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#UpFlexibility">
+        <rdfs:label>Up flexibility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#ampere_hour__Ah -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/recognition/Cim#ampere_hour__Ah">
+        <rdf:type rdf:resource="http://purl.org/recognition/Cim#Soc_Unit"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
