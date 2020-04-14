@@ -39,9 +39,6 @@ This section provides details for each class and property defined by Re-cognitio
          <a href="#https://w3id.org/saref#Energy" title="https://w3id.org/saref#Energy">Energy</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
-      </li>
-      <li>
          <a href="#https://w3id.org/saref#FeatureOfInterest" title="https://w3id.org/saref#FeatureOfInterest">Feature Of Interest</a>
       </li>
       <li>
@@ -115,9 +112,6 @@ This section provides details for each class and property defined by Re-cognitio
             title="http://purl.org/recognition/Cim#Return_Of_Investment">
             <span>return of investment</span>
          </a>
-      </li>
-      <li>
-         <a href="#Sector" title="http://purl.org/recognition/Cim#Sector">Sector</a>
       </li>
       <li>
          <a href="#SoC" title="http://purl.org/recognition/Cim#SoC">
@@ -306,34 +300,6 @@ This section provides details for each class and property defined by Re-cognitio
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#EnergyLoadForecast"
                title="http://purl.org/recognition/Cim#EnergyLoadForecast">Energy load forecast</a>
             <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.opengis.net/ont/geosparql#Feature">
-      <h3>Feature<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Feature</p>
-      <div class="comment">
-         <span class="markdown">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://purl.org/recognition/Cim#</dd>
-         <dd>http://purl.org/recognition/Cim#</dd>
-      </dl>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Sector" title="http://purl.org/recognition/Cim#Sector">Sector</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">hasGeometry</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -674,24 +640,6 @@ This section provides details for each class and property defined by Re-cognitio
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Sector">
-      <h3>Sector<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/recognition/Cim#Sector</p>
-      <div class="comment">
-         <span class="markdown">A section or zone</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="SoC">
       <h3>so c<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -734,6 +682,10 @@ This section provides details for each class and property defined by Re-cognitio
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</p>
+      <div class="comment">
+         <span class="markdown">SAREF extension for building devices
+SAREF4BLDG ontology, an extension of the SAREF ontology that was created based on the Industry Foundation Classes (IFC) standard for building information. It should be noted that not the whole standard has been transformed since it exceeds the scope of this extension, which is limited to devices and appliances within the building domain.</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -1066,15 +1018,6 @@ This section provides details for each class and property defined by Re-cognitio
          </dd>
          <dd>http://purl.org/recognition/Cim#</dd>
       </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
    </div>
    <div class="entity" id="https://w3id.org/def/saref4city#isDerivedFrom">
       <h3>is derived from<sup class="type-op" title="object property">op</sup>
@@ -1208,7 +1151,7 @@ This section provides details for each class and property defined by Re-cognitio
       <p>
          <strong>IRI:</strong> http://purl.org/recognition/Cim#manages</p>
       <div class="comment">
-         <span class="markdown">Relation between a Bulding and the  devices it manages</span>
+         <span class="markdown">Relation between a Virutal Node and the  devices it manages</span>
       </div>
    </div>
    <div class="entity" id="https://w3id.org/saref#measuresProperty">
